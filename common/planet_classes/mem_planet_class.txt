@@ -4,6 +4,8 @@ pc_destroyed = {
 	entity_scale = 0.4
 	icon_frame = 18
 	
+	picture = pc_asteroid
+	
 	asteroid = yes
 	
 	spawn_odds = 0
