@@ -1,0 +1,67 @@
+####################################
+# More Events Mod
+# Debug Events
+# THESE ARE MEANT TO HELP DEBUG!
+# THEY ARE NOT INTENDED TO BE USED
+# EXCEPT VIA CONSOLE CALL!
+####################################
+
+namespace = mem_debug_event
+
+@tier3researchreward = 18
+@tier3researchmin = 120
+@tier3researchmax = 350
+
+planet_event = {
+	id = mem_debug_event.1
+	title = "MEM DEBUG MAKE ASTEROID"
+	desc = "Make an asteroid"
+	picture = "GFX_evt_black_hole"
+	location = FROM
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		change_pc = pc_asteroid
+	}
+	
+	option = {
+		name = "ok"
+	}
+}
+
+planet_event = {
+	id = mem_debug_event.2
+	title = "MEM DEBUG MAKE BARREN"
+	desc = "Make a barren"
+	picture = "GFX_evt_black_hole"
+	location = FROM
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		change_pc = pc_barren
+	}
+	
+	option = {
+		name = "ok"
+	}
+}
+
+planet_event = {
+	id = mem_debug_event.3
+	title = "MEM DEBUG MAKE BARREN"
+	desc = "Make an asteroid"
+	picture = "GFX_evt_black_hole"
+	location = FROM
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		change_pc = pc_destroyed
+	}
+	
+	option = {
+		name = "ok"
+	}
+}
